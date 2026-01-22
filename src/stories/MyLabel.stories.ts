@@ -8,6 +8,7 @@ const meta = {
   argTypes: {
     size: { control: 'inline-radio' }, // controls how the size options are displayed in the storybook
     fontColor: { control: 'color' },
+    backgroundColor: { control: 'color' },
   },
   parameters: {
     layout: 'centered',
@@ -41,5 +42,12 @@ export const CustomColor: Story = {
   args: {
     label: 'Custom Color Label',
     fontColor: 'green',
+  }
+};
+
+export const CustomBackgroundColor: Story = {
+  args: {
+    label: 'Custom Background Color Label',
+    backgroundColor: 'lightblue',
   }
 };
